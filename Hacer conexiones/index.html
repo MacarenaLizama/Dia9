@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <title>Profile</title>
+</head>
+<body>
+        <!--Encabezado-->
+        <div class="barranav">
+            <h1 class="titulonav">Profile</h1>
+            <ul class="linksnav">
+                <li><a href="#" class="links">Home</a></li>
+                <li><a href="#" class="links">My Profile</a></li>
+                <li><a href="#" class="links">Find Connections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
+        </div>
+
+        <div class="contenedor">
+
+            <div class="contenedor1">
+            <!--Tarjeta Usuario-->
+            <div class="tarjetaUsuario">
+                <header class="header1">
+                    <img  class="imagenUsuario" src="./images/jane-m.jpg" alt="Usuario">
+                </header>
+                <main>
+                    <h2 class="nombreUsuario">Jane Doe</h2>
+                    <div class="ubicacion">
+                        <img class="imagenUbicacion" src="./icons/map-marker.png" alt="mapa">
+                    <div class="ciudad">
+                        Seattle
+                    </div>
+                    </div>    
+                    <div>
+                        Developer | Engineer | Problem Solver
+                    </div>
+                    <div>
+                    Master of shadows and the Internet!
+                    </div>        
+                    <div class="edicion">
+                        <img class="imagenEditar" src="./icons/gear.png" alt="editar">
+                        <a href="#" class="editarPerfil" onclick="cambiarNombre()">edit profile</a>
+                    </div>
+                </main>
+            </div>
+            <!--Tarjeta Academica-->
+            <div class="tarjetaAcademica">
+                <header class="header2">
+                    <h4 class="taEducation">Education</h4>
+                </header>
+                <div>
+                    <h3 class="taInstitucion">Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="taFecha">Dec 2019-Mar 2020</p>
+                    <h4 class="taLenguajes">Triple black belt in Python, MERN, and C#</h4>
+                </div>
+            </div>
+            </div>
+            <div class="contenedor2">
+            <!--Tarjeta Recomendaciones-->
+            <div class="tarjetaRecomendados">
+                <header class="header3">
+                    <div class="circulo">
+                        <h3 id="numConnection">2</h3>
+                    </div>
+                    <h4 class="trTitulo">Connection Requests</h4>
+                </header>
+                <div class="trPersonas" id="persona1">
+                    <img class="trImag" src="./images/todd-s.jpg" alt="todd">
+                    <h4 class="trNombre">Todd E</h4>
+                    <img class="trImag1" onclick="eliminarUsuario1(this, 'add')" src="./icons/accept-circle.png" alt="aceptar">
+                    <img class="trImag2" onclick="eliminarUsuario1(this, 'remove')" src="./icons/close-circle.png" alt="Rechazar">
+                </div>
+                <div class="trPersonas" id="persona2">
+                    <img class="trImag" src="./images/phil-s.jpg" alt="Phil">
+                    <h4 class="trNombre">Phil K</h4>
+                    <img class="trImag1"onclick="eliminarUsuario2(this, 'add')" src="./icons/accept-circle.png" alt="aceptar">
+                    <img class="trImag2" onclick="eliminarUsuario2(this, 'remove')"src="./icons/close-circle.png" alt="Rechazar">
+                </div>
+            <!--Tarjeta Conectados-->
+            <div class="tarjetaConectados">
+                <header class="header4">
+                    <div class="tccirculo">
+                        <h3>500+</h3>
+                    </div>
+                    <h4 class="tcTitulo">Your Connections</h4>
+                </header>
+                    <div class="tcPersonas" >
+                        <img class="tcImag" src="./images/adrien-s.jpg" alt="Adrien">
+                        <h4 class="tcNombre">Adrien D</h4>
+                    </div>
+                    <div class="tcPersonas" >
+                        <img class="tcImag" src="./images/anne-s.jpg" alt="Anne">
+                        <h4 class="tcNombre">Anne J</h4>
+                    </div>
+                    <div class="tcPersonas" >
+                        <img class="tcImag" src="./images/alayne-s.jpg" alt="Alayne">
+                        <h4 class="tcNombre">Alayne T</h4>
+                    </div>
+                    <div class="tcPersonas" id="misConexiones">
+                        <img class="tcImag" src="./images/arry-s.jpg" alt="Arry">
+                        <h4 class="tcNombre">Arry Y</h4>
+                    </div> 
+                    <div class="viewmore">
+                        <p class="tconTitulo">View More</p>
+                    </div>  
+            </div>
+            </div>
+        </div>
+        <script src="./JS/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+body{
+    font-family: 'Comic Neue', cursive;
+}
+.contenedor{
+    display:flex;
+    flex-direction: row;
+}
+.contenedor1,.contenedor2{
+    display:flex;
+    flex-direction: column;
+}
+/*Encabezado*/
+.barranav{
+    display:flex;
+    align-items:flex-start;
+    background-color: black;
+    margin-bottom: 10px;
+    
+}
+.linksnav{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin-right: 100px;
+}
+li{
+    padding: 5px 15px;
+}
+.titulonav{
+    padding-left:100px;
+    color:white;
+}
+.links{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.btn{
+    color:white;
+    background-color: rgb(31, 180, 190);
+    border: 4px solid black;
+    margin-left: 160px;
+}
+/*Tarjeta Usuario*/
+.tarjetaUsuario{
+    display:flex;
+    flex-direction:column;
+    width: 430px;
+    border: 2px solid rgb(184, 182, 182);
+    margin-bottom: 20px;
+    margin-left: 100px;
+    }
+.header1{
+    background-color: rgb(64, 177, 192);
+    position:relative;
+    height: 80px;
+    }
+.imagenUsuario{
+    width: 80px;
+    position:absolute;
+    top: 40px;
+    left:10px;
+    border-radius:50%;
+    border:3px solid white;
+    box-shadow: 0 0 2px 2px gray;
+}
+main{
+    padding:20px;
+}
+.nombreUsuario{
+    margin-top:30px;
+}
+.ubicacion,.edicion{
+    display:flex;
+    flex-direction: row;
+}
+.imagenUbicacion{
+width: 15px;
+}
+.imagenEditar{
+width: 15px;
+}
+.ciudad, .editarPerfil{
+    margin-left:10px;
+}
+.ubicacion{
+    margin-bottom: 8px;
+}
+.edicion{
+    margin-top:8px;
+}
+/*Tarjeta Academica*/
+.tarjetaAcademica{
+    display:flex;
+    flex-direction: column;
+    border: 2px solid rgb(184, 182, 182);
+    width: 430px;
+    margin-left: 100px;
+    }
+.header2{
+    background-color: rgb(26, 25, 25);
+    height: 40px;
+    color: white;    
+    }
+.taEducation{
+    padding-left: 20px;
+    line-height: 50%;
+}
+.taInstitucion{
+    padding-left: 20px;
+}
+.taFecha{
+    padding-left: 20px;
+    color:gray;
+}
+.taLenguajes{
+    padding-left: 20px;
+}
+/*Tarjeta Recomendados*/
+.tarjetaRecomendados{
+    width: 240px;
+    border: 2px solid rgb(184, 182, 182);
+    height: 200px;
+    margin-left: 30px;
+}
+.header3{
+    background-color: rgb(26, 25, 25);
+    height: 50px;
+    display:flex;
+    align-items: center;
+}
+.circulo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin-left: 10px;
+}
+.trTitulo{
+    color:white;
+    margin-left: 30px;
+}
+.trPersonas{
+    display:flex;
+    flex-direction: row;
+}
+.trImag{
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+.trNombre{
+    padding-right: 5px;
+    align-items: center;
+}
+.trImag1{
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.trImag2{
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 6px;
+    margin-top: 10px;
+}
+/*Tarjeta Conectados*/
+.tarjetaConectados{
+    display:inline-block;
+    width: 240px;
+    border: 2px solid rgb(184, 182, 182);
+    height: 290px;
+    margin-top: 50px;
+}
+.header4{
+    background-color: rgb(26, 25, 25);
+    height: 50px;
+    display:flex;
+    align-items: center;
+}
+.tccirculo{
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1px;
+    margin-left: 10px;
+}
+.tcTitulo{
+    color:white;
+    margin-left: 30px;
+}
+.tcPersonas{
+    display:flex;
+    flex-direction: row;
+}
+.tcImag{
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.tcNombre{
+    padding-left: 10px;
+    align-items: center;
+}
+.tcImag1{
+    border-radius:50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.viewmore{
+    width: 240px;
+    height: 40px;
+    border:2px solid rgb(184, 182, 182);
+}
+.tconTitulo{
+    color:rgb(56, 56, 250);
+    text-decoration: underline;
+    padding-left: 5px;
+    font-weight: bold;
+}
